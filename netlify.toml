@@ -1,0 +1,9 @@
+# Custom Crafted Sites — static site + Jarvis chat function.
+# No build step: the site files are published as-is from the repo root.
+[build]
+  publish = "public"
+  command = "echo 'static site, no build'"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

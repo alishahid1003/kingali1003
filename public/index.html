@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Crafted Sites — Card machines &amp; websites for local businesses</title>
+<meta name="description" content="Two ways to work with us: a card machine package with a free website built in, or a professionally built website and online setup on its own. Plus one-off services: a business phone dialer and custom software built in-house. Done for you.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#111114">
+<link rel="canonical" href="https://customcraftedsites.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Custom Crafted Sites">
+<meta property="og:title" content="Custom Crafted Sites — Card machines &amp; websites for local businesses">
+<meta property="og:description" content="Card machine bundles with a website built in, or website-only plans. Google &amp; Apple Maps, Facebook, Instagram and ads — plus a business dialer and custom software. Done for you on Long Island.">
+<meta property="og:url" content="https://customcraftedsites.org/">
+<meta property="og:image" content="https://customcraftedsites.org/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Custom Crafted Sites","url":"https://customcraftedsites.org/","telephone":"+1-516-288-5999","email":"support@customcraftedsites.org","areaServed":"Long Island, NY","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"21:00"}],"description":"Card machines and websites for local businesses: website design, Google Business Profile, Apple Business Connect, Facebook & Instagram setup and ads, business phone dialers, and custom software built in-house.","sameAs":["https://www.facebook.com/profile.php?id=61596758187357"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root{--ease:cubic-bezier(.22,.9,.3,1)}
+*{-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:#F6F6F3;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+a{color:#2E4BFF}a:hover{color:#1F35C4}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] summary .faqx{transform:rotate(45deg)}
+:focus-visible{outline:3px solid #2E4BFF;outline-offset:2px}
+.check{flex:none;margin-top:2px}
+.tbtn{border:none;font:inherit;font-size:15px;font-weight:600;padding:11px 18px;border-radius:10px;min-height:44px;cursor:pointer;background:transparent;color:#55565E;transition:background .2s,color .2s}
+.tbtn.on{background:#111114;color:#F6F6F3}
+.pgrp[hidden]{display:none}
+/* tactile buttons/links */
+a[href],button,.tbtn{transition:transform .14s var(--ease),box-shadow .22s var(--ease),background .2s,color .2s}
+a[href]:active,button:active{transform:scale(.97)}
+/* lift pricing/feature cards on hover-capable devices */
+@media (hover:hover){
+ .lift{transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+ .lift:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(17,17,20,.12)}
+}
+#contact a[href^="tel:"],#contact a[href^="mailto:"]{padding-block:6px}
+footer a{padding-block:8px}
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* primary CTA shine */
+.cta-shine{position:relative;overflow:hidden}
+.cta-shine::after{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg);animation:ctashine 3.4s ease-in-out infinite}
+@keyframes ctashine{0%{left:-60%}55%,100%{left:140%}}
+/* sticky mobile action bar */
+#mbar{display:none}
+@media (max-width:720px){
+ #mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(246,246,243,.92);backdrop-filter:blur(10px);border-top:1px solid #E2E2DC}
+ #mbar a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;padding:14px 10px;border-radius:12px;min-height:50px}
+ #mbar .call{background:#fff;color:#111114;border:1.5px solid #111114}
+ #mbar .quote{background:#2E4BFF;color:#fff}
+ body{padding-bottom:74px}
+ /* hide secondary nav links on phones, keep logo + quote */
+ nav[aria-label="Main"] a[href^="#"]:not([href="#contact"]),nav[aria-label="Main"] .navbook{display:none}
+ /* tighten section padding on phones */
+ section{padding-left:18px!important;padding-right:18px!important}
+}
+@media (max-width:720px){
+ header > div{flex-wrap:nowrap!important;padding:12px 16px!important;gap:10px!important}
+ header a[href="#top"] > span:last-child{font-size:17px!important}
+ nav[aria-label="Main"]{flex-wrap:nowrap!important}
+ nav[aria-label="Main"] a[href="#contact"]{padding:9px 14px!important;min-height:40px!important;font-size:14px;white-space:nowrap}
+ div[role="group"][aria-label="Choose service"]{display:grid!important;grid-template-columns:1fr 1fr;align-self:stretch!important}
+ .tbtn{font-size:clamp(12px,3.5vw,14px);padding:10px 4px;white-space:nowrap}
+}
+@media (max-width:480px){
+ #top{padding-top:54px!important;padding-bottom:48px!important}
+ .herobtn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #111114; background: #F6F6F3; min-height: 100vh">
+
+<!-- ANNOUNCEMENT BAR -->
+<div style="background: #111114; color: #F6F6F3; text-align: center; font-size: 14px; font-weight: 600; padding: 9px 16px; letter-spacing: 0.01em">🎉 New customers: <span style="color: #D4F57A">$100 off</span> your total purchase · Most builds live in 24–48 hours · <a href="#pricing" style="color: #D4F57A; text-decoration: underline">See pricing</a></div>
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #E2E2DC; background: #F6F6F3; position: sticky; top: 0; z-index: 10">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #111114">
+<span style="width: 34px; height: 34px; border-radius: 9px; background: #111114; display: flex; align-items: center; justify-content: center">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.02em">Custom Crafted Sites</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 15px; font-weight: 500">
+<a href="#machines" style="color: #111114; text-decoration: none">Machines</a>
+<a href="#included" style="color: #111114; text-decoration: none">What's included</a>
+<a href="#pricing" style="color: #111114; text-decoration: none">Pricing</a>
+<a href="#addons" style="color: #111114; text-decoration: none">Dialer &amp; software</a>
+<a href="#work" style="color: #111114; text-decoration: none">Our work</a>
+<a href="#faq" style="color: #111114; text-decoration: none">FAQ</a>
+<a href="/book" class="navbook" style="color: #111114; text-decoration: none">Book a call</a>
+<a href="#contact" style="background: #111114; color: #F6F6F3; text-decoration: none; padding: 11px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Get a quote</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 84px 24px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="background: #D4F57A; color: #111114; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 999px">Card machines &amp; websites for local businesses</span>
+<span style="background: #111114; color: #F6F6F3; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">⚡ Live in 24–48 hours</span>
+<a href="#addons" style="background: #2E4BFF; color: #FFFFFF; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px; text-decoration: none">NEW: Business dialer + custom software →</a>
+</div>
+<h1 style="margin: 0; font-size: clamp(2.5rem, 5.2vw, 4.2rem); line-height: 1.0; letter-spacing: -0.035em; font-weight: 700">Card machine with a free website — or just the website. Your choice.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #55565E; max-width: 580px">Two ways to work with us: get a <strong style="color:#111114">card machine</strong> package with a website built in free, or just a professionally built <strong style="color:#111114">website and online setup</strong> on its own. Need more? Add a <strong style="color:#111114">business phone dialer</strong> or <strong style="color:#111114">custom software built in-house</strong> for your business. One local team, done for you.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#pricing" class="herobtn cta-shine" style="background: #2E4BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center">See packages &amp; pricing</a>
+<a href="/book" class="herobtn" style="background: transparent; color: #111114; text-decoration: none; font-weight: 600; padding: 15px 24px; border-radius: 12px; border: 1.5px solid #111114; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center">Book a free call</a>
+</div>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; background: #111114; color: #F6F6F3; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 13px">
+<div style="font-size: 13px; font-weight: 600; color: #A9AAB2; letter-spacing: 0.06em; text-transform: uppercase">Ways to work with us</div>
+<div style="background: #1E1E23; padding: 18px; border-radius: 14px; display: flex; flex-direction: column; gap: 6px"><div style="display:flex;align-items:center;gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M9 6h6"></path></svg><span style="font-size:17px;font-weight:600">Machine + free website</span></div><span style="font-size:14px;color:#A9AAB2">Take cards, get a website on us.</span></div>
+<div style="background: #1E1E23; padding: 18px; border-radius: 14px; display: flex; flex-direction: column; gap: 6px"><div style="display:flex;align-items:center;gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 8h18"></path><path d="M8 21h8"></path></svg><span style="font-size:17px;font-weight:600">Website only</span></div><span style="font-size:14px;color:#A9AAB2">Just the site &amp; online setup, done right.</span></div>
+<a href="#addons" style="background: #1E1E23; padding: 18px; border-radius: 14px; display: flex; flex-direction: column; gap: 6px; color: #F6F6F3; text-decoration: none; border: 1px solid #D4F57A"><div style="display:flex;align-items:center;gap:10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg><span style="font-size:17px;font-weight:600">One-off add-ons</span><span style="background:#D4F57A;color:#111114;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px">NEW</span></div><span style="font-size:14px;color:#A9AAB2">Business phone dialer · custom software built in-house.</span></a>
+</div>
+</section>
+
+<!-- MACHINES -->
+<section id="machines" style="background: #111114; color: #F6F6F3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 92px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px">
+<span style="align-self: flex-start; background: #D4F57A; color: #111114; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 999px">Website included free with every machine</span>
+<h2 style="margin: 0; font-size: clamp(2rem, 3.8vw, 3rem); letter-spacing: -0.03em; line-height: 1.06">Pick your machine</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #A9AAB2">Take tap, chip and swipe from day one. Every machine package comes with a professionally built website and your online listings — on us.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<div style="background: #1E1E23; border: 1px solid #33343B; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 16px">
+<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><rect x="8.5" y="5" width="7" height="5" rx="1"></rect><path d="M9 14h2"></path><path d="M13 14h2"></path><path d="M9 17h2"></path><path d="M13 17h2"></path></svg>
+<h3 style="margin: 0; font-size: 23px">Handheld reader</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #A9AAB2">Wireless and pocket-sized. Take payments table-side, on the road, or at the counter — tap, chip, swipe and contactless.</p>
+</div>
+<div style="background: #1E1E23; border: 1px solid #33343B; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 16px">
+<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M2 14h20"></path><path d="M7 21h10"></path><path d="M9 21v-4"></path><path d="M15 21v-4"></path></svg>
+<h3 style="margin: 0; font-size: 23px">Countertop register</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #A9AAB2">A full register for your counter — fast checkout, printed receipts, daily reporting and tips right on the screen.</p>
+</div>
+<div style="background: #1E1E23; border: 1px solid #33343B; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 16px">
+<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"></path><path d="M5 7h14"></path><path d="M5 17h14"></path><circle cx="12" cy="12" r="9"></circle></svg>
+<h3 style="margin: 0; font-size: 23px">Or run both</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #A9AAB2">Cover the counter and the floor. Pair the countertop register with a handheld so you never miss a sale.</p>
+</div>
+</div>
+<p style="margin: 0; font-size: 14px; color: #A9AAB2">Processing is set up through our payments partner on an approved merchant account, at a rate based on your business type and volume.</p>
+</div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section id="included" style="background: #FFFFFF; border-bottom: 1px solid #E2E2DC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">Everything a local business needs online</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #55565E">Whether you come for the machine or just the website, one team builds your whole online presence. Whatever you run, big, small, or in between.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="border: 1px solid #E2E2DC; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 8h18"></path><path d="M8 21h8"></path></svg><h3 style="margin: 0; font-size: 21px">Custom website</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">A fast, mobile site on your own domain, with click-to-call and a contact form.</p></div>
+<div style="border: 1px solid #E2E2DC; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M9 6h6"></path><path d="M9 18h6"></path></svg><h3 style="margin: 0; font-size: 21px">Card machines</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Handheld, countertop register, or both — set up at a low processing rate.</p></div>
+<div style="border: 1px solid #E2E2DC; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><h3 style="margin: 0; font-size: 21px">Google &amp; Apple Maps</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Google Business Profile and Apple Business Connect, claimed and filled out.</p></div>
+<div style="border: 1px solid #E2E2DC; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><path d="M16 4.5a3 3 0 0 1 0 6"></path></svg><h3 style="margin: 0; font-size: 21px">Facebook &amp; Instagram</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Business pages created and branded, linked to your site.</p></div>
+<div style="border: 1px solid #E2E2DC; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v3a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg><h3 style="margin: 0; font-size: 21px">Google &amp; Meta ads</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Ad accounts and your first campaigns built and launched.</p></div>
+<div style="border: 1px solid #E2E2DC; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6l-8-3z"></path><path d="m9 12 2 2 4-4"></path></svg><h3 style="margin: 0; font-size: 21px">One point of contact</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Payments and your online presence, handled by one local team.</p></div>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="max-width: 1200px; margin: 0 auto; padding: 92px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">Pick how you want to work with us</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #55565E">Bundle a card machine and get your website free, or take just the website and online setup. Switch between them below.</p>
+</div>
+<div role="group" aria-label="Choose service" style="display: inline-flex; align-self: flex-start; background: #ECECE6; padding: 5px; border-radius: 13px; gap: 4px; flex-wrap: wrap">
+<button type="button" id="tBundle" class="tbtn on" aria-pressed="true">Machine + free website</button>
+<button type="button" id="tWeb" class="tbtn" aria-pressed="false">Website only</button>
+</div>
+
+<!-- BUNDLE GROUP -->
+<div id="grp-bundle" class="pgrp" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: stretch">
+<div style="background: #FFFFFF; border: 1px solid #E2E2DC; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 24px">Starter</h3><p style="margin: 0; font-size: 15px; color: #55565E">Take cards and get online.</p></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">$199</span><span style="font-size: 15px; color: #55565E">one-time</span></div><span style="font-size: 14px; color: #55565E">+ cloud software fee &amp; monthly subscription</span></div>
+<a href="#contact" style="background: #111114; color: #F6F6F3; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 12px; text-align: center; min-height: 44px; box-sizing: border-box">Choose Starter</a>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Handheld card reader, set up</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Low processing rate</li>
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Free 5-page website</li>
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Free Google Business Profile</li>
+</ul>
+</div>
+<div style="background: #111114; color: #F6F6F3; border: 2px solid #D4F57A; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><h3 style="margin: 0; font-size: 24px">Complete</h3><span style="background: #D4F57A; color: #111114; font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px">Most popular</span></div><p style="margin: 0; font-size: 15px; color: #A9AAB2">The machine, the website, the full setup.</p></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">$399</span><span style="font-size: 15px; color: #A9AAB2">one-time</span></div><span style="font-size: 14px; color: #A9AAB2">+ cloud software fee &amp; monthly subscription</span></div>
+<a href="#contact" style="background: #2E4BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 12px; text-align: center; min-height: 44px; box-sizing: border-box">Choose Complete</a>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Everything in Starter, plus:</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg><span>Register <em>or</em> handheld</span></li>
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Free full website, up to 10 pages</li>
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Free Apple Maps + Facebook &amp; Instagram</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Review link &amp; QR</li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E2DC; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 24px">Everything</h3><p style="margin: 0; font-size: 15px; color: #55565E">Both machines and the full push.</p></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">$699</span><span style="font-size: 15px; color: #55565E">one-time</span></div><span style="font-size: 14px; color: #55565E">+ cloud software fee &amp; monthly subscription</span></div>
+<a href="#contact" style="background: #111114; color: #F6F6F3; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 12px; text-align: center; min-height: 44px; box-sizing: border-box">Choose Everything</a>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Everything in Complete, plus:</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg><span><strong>Both</strong> machines — handheld + register</span></li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Online booking or a small store</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Google &amp; Facebook ads launched</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Priority support</li>
+</ul>
+</div>
+</div>
+
+<!-- WEBSITE-ONLY GROUP -->
+<div id="grp-web" class="pgrp" hidden style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: stretch">
+<div style="background: #FFFFFF; border: 1px solid #E2E2DC; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 24px">Get Found</h3><p style="margin: 0; font-size: 15px; color: #55565E">The basics done right.</p></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">$499</span><span style="font-size: 15px; color: #55565E">setup</span></div><span style="font-size: 14px; color: #55565E">+ $49/mo hosting &amp; care</span></div>
+<a href="#contact" style="background: #111114; color: #F6F6F3; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 12px; text-align: center; min-height: 44px; box-sizing: border-box">Choose Get Found</a>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>5-page mobile website</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Domain connection &amp; SSL</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Google Business Profile &amp; Apple Maps</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Facebook business page</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Basic SEO &amp; contact form</li>
+</ul>
+</div>
+<div style="background: #111114; color: #F6F6F3; border: 2px solid #D4F57A; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><h3 style="margin: 0; font-size: 24px">Get Customers</h3><span style="background: #D4F57A; color: #111114; font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px">Most popular</span></div><p style="margin: 0; font-size: 15px; color: #A9AAB2">Website, listings, social &amp; ads.</p></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">$1,299</span><span style="font-size: 15px; color: #A9AAB2">setup</span></div><span style="font-size: 14px; color: #A9AAB2">+ $99/mo</span></div>
+<a href="#contact" style="background: #2E4BFF; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 12px; text-align: center; min-height: 44px; box-sizing: border-box">Choose Get Customers</a>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Everything in Get Found, plus:</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Up to 10 pages with service pages</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Instagram + Google &amp; Meta ads</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Review link, QR &amp; monthly report</li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E2E2DC; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 24px">Dominate Local</h3><p style="margin: 0; font-size: 15px; color: #55565E">Managed growth.</p></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.03em">$2,499</span><span style="font-size: 15px; color: #55565E">setup</span></div><span style="font-size: 14px; color: #55565E">+ $199/mo</span></div>
+<a href="#contact" style="background: #111114; color: #F6F6F3; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 12px; text-align: center; min-height: 44px; box-sizing: border-box">Choose Dominate Local</a>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Everything in Get Customers, plus:</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Online booking or a small store</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>Ongoing Google &amp; Meta ad management</li>
+<li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="check"><path d="m5 12 5 5L20 7"></path></svg>4 social posts/mo &amp; priority support</li>
+</ul>
+</div>
+</div>
+
+<div style="background: #111114; color: #F6F6F3; border-radius: 20px; padding: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 620px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #D4F57A">Buy-Out Program</span>
+<h3 style="margin: 0; font-size: clamp(1.6rem, 2.6vw, 2.1rem); letter-spacing: -0.02em; line-height: 1.1">Own everything outright — built and handed over in your name.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C7C8CF">One-time buy-out of the full package: card machine setup, your custom website, Google &amp; Apple listings, and social &amp; ads setup — all built and handed over fully in your name. One-time buy-out fee, plus the cloud software fee and monthly subscription. Buy-Out pricing changes only if the AI software it runs on raises its prices.</p>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px">
+<div><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em">$22,500</span><span style="font-size: 15px; color: #A9AAB2; margin-left: 8px">one-time</span><div style="font-size: 14px; color: #A9AAB2; margin-top: 4px">+ cloud software fee &amp; monthly subscription</div></div>
+<a href="#contact" style="background: #D4F57A; color: #111114; text-decoration: none; font-weight: 700; padding: 14px 24px; border-radius: 12px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Ask about the buy-out</a>
+</div>
+</div>
+
+<p id="fineprint" style="margin: 0; font-size: 14px; line-height: 1.6; color: #55565E; border-top: 1px solid #E2E2DC; padding-top: 18px"><strong style="color:#111114">Fine print:</strong> Every service — machine bundles, website-only plans and the Buy-Out Program — is billed as a one-time fee (setup or buy-out), <strong style="color:#111114">plus a cloud software fee, plus a monthly subscription</strong>. Your exact cloud and subscription amounts are confirmed in your written quote before you sign. Card processing is set up through our payments partner on an approved merchant account, subject to eligibility. Ad spend, if any, is billed by Google and Meta directly. <strong style="color:#111114">Your prices are locked in.</strong> The only pricing that can ever change is the Buy-Out Program&#8217;s, and only if the AI software it runs on raises its prices. <strong style="color:#111114">Sales tax:</strong> NY sales tax applies only to card machines and other hardware, at your county&#8217;s rate; website design, setup and online services aren&#8217;t taxed.</p>
+</section>
+
+<!-- ADD-ONS: DIALER + CUSTOM SOFTWARE -->
+<section id="addons" style="background: #111114; color: #F6F6F3; border-bottom: 1px solid #33343B">
+<div style="max-width: 1200px; margin: 0 auto; padding: 84px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<span style="align-self: flex-start; background: #D4F57A; color: #111114; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 999px">New · One-off services</span>
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">A business dialer. Custom software. Built for you.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #A9AAB2">Two stand-alone services you can add to any package — or buy on their own. No bundle required.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<div class="lift" style="background: #1E1E23; border: 1px solid #33343B; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
+<h3 style="margin: 0; font-size: 28px; letter-spacing: -0.02em">Business phone dialer</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C7C8CF">Call your leads and customers faster. Click-to-call and power dialing for your sales and follow-up calls — set up, connected to your business number, and your team trained to use it.</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.8; color: #C7C8CF"><li>Click-to-call &amp; power dialing</li><li>Call lists, notes &amp; follow-ups in one place</li><li>Set up on your business number</li><li>Training for you and your staff</li></ul>
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px; align-items: flex-start"><div><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px">Custom quote</span><div style="font-size: 14px; color: #A9AAB2; margin-top: 4px">one-time setup + cloud software fee &amp; monthly subscription</div></div>
+<a href="#contact" data-pkg="One-off — Business phone dialer (custom quote)" class="addonbtn" style="background: #D4F57A; color: #111114; text-decoration: none; font-weight: 700; padding: 14px 24px; border-radius: 12px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Get a dialer quote</a></div>
+</div>
+<div class="lift" style="background: #1E1E23; border: 1px solid #33343B; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
+<h3 style="margin: 0; font-size: 28px; letter-spacing: -0.02em">Custom software, built in-house</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C7C8CF">Software made for the way your business actually runs — designed and built by our own team, not an off-the-shelf app you have to bend around.</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.8; color: #C7C8CF"><li>Booking &amp; scheduling systems</li><li>Customer databases (CRM)</li><li>Quotes, invoices &amp; internal tools</li><li>Dashboards for your numbers</li></ul>
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px; align-items: flex-start"><div><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px">Custom quote</span><div style="font-size: 14px; color: #A9AAB2; margin-top: 4px">one-time build + cloud software fee &amp; monthly subscription</div></div>
+<a href="#contact" data-pkg="One-off — Custom-built software (custom quote)" class="addonbtn" style="background: #D4F57A; color: #111114; text-decoration: none; font-weight: 700; padding: 14px 24px; border-radius: 12px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Get a software quote</a></div>
+</div>
+</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #A9AAB2; border-top: 1px solid #33343B; padding-top: 18px"><strong style="color:#F6F6F3">Fine print:</strong> One-off services are quoted per business: a one-time setup or build fee, plus a cloud software fee, plus a monthly subscription, all confirmed in your written quote before you sign. <strong style="color:#F6F6F3">Prices locked in.</strong> Dialer use must follow federal and state calling rules (including TCPA and Do-Not-Call); it's set up for calls to your own customers and leads.</p>
+</div>
+</section>
+<script>document.querySelectorAll('.addonbtn').forEach(function(a){a.addEventListener('click',function(){var s=document.querySelector('select[name="package"]');if(s){s.value=a.getAttribute('data-pkg');}});});</script>
+
+<!-- WORK -->
+<section id="work" style="background: #111114; color: #F6F6F3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px">
+<span style="align-self: flex-start; background: #D4F57A; color: #111114; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 999px">Built by us</span>
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">Sites we've built</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #A9AAB2">Real, live Long Island businesses — designed, built and launched by our team.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<a href="https://fetchandfix.org" target="_blank" rel="noopener" style="background: #1E1E23; border: 1px solid #33343B; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px; color: #F6F6F3; text-decoration: none"><span style="font-size: 13px; color: #A9AAB2; font-weight: 600; letter-spacing: .06em; text-transform: uppercase">Auto service · Long Island</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">Fetch &amp; Fix</span><span style="font-size: 15px; color: #A9AAB2; line-height: 1.5">Car pick-up, repair &amp; drop-off — website, booking form and Facebook page.</span><span style="color: #D4F57A; font-weight: 600">fetchandfix.org →</span></a>
+<a href="https://customcraftedsites.org" style="background: #1E1E23; border: 1px solid #33343B; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px; color: #F6F6F3; text-decoration: none"><span style="font-size: 13px; color: #A9AAB2; font-weight: 600; letter-spacing: .06em; text-transform: uppercase">Web agency · Long Island</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">Custom Crafted Sites</span><span style="font-size: 15px; color: #A9AAB2; line-height: 1.5">This site — plus our Google Business Profile, Facebook page and ads.</span><span style="color: #D4F57A; font-weight: 600">You're looking at it ✓</span></a>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="background: #FFFFFF; border-top: 1px solid #E2E2DC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">How it works</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; color: #2E4BFF">01</span><h3 style="margin: 0; font-size: 21px">Pick your path</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Machine bundle or website only. We quote you free — no pressure.</p></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; color: #2E4BFF">02</span><h3 style="margin: 0; font-size: 21px">We build it</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">We set up your machine and/or build your site and listings. One short kickoff call.</p></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; color: #2E4BFF">03</span><h3 style="margin: 0; font-size: 21px">You go live in 24–48 hours</h3><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #55565E">Most builds are live and handed over to you within 24–48 hours — site, listings and machine ready to go.</p></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background: #F6F6F3; border-top: 1px solid #E2E2DC; border-bottom: 1px solid #E2E2DC">
+<div style="max-width: 860px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">Questions, answered</h2>
+<div style="display: flex; flex-direction: column">
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">How fast will I be live?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Most builds are live within <strong style="color:#111114">24–48 hours</strong> of your kickoff. Larger or custom projects can take a little longer — we'll tell you upfront.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">How does the $100 new-customer offer work?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">If you&#8217;re a new customer, we take <strong style="color:#111114">$100 off your total purchase</strong>, applied on your first invoice — on any machine bundle, website plan or the Buy-Out Program. One per business; can&#8217;t be combined with other offers.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">Do you charge sales tax?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Only on physical equipment. Card machines and other hardware are taxed at your county&#8217;s NY sales tax rate (for example 8.75% in Suffolk, 8.625% in Nassau). Website design, setup and online services aren&#8217;t subject to NY sales tax. Tax is shown as its own line on your invoice.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">Do I have to get a card machine?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">No. You can take just the website and online setup on its own — see the "Website only" pricing. The machine bundle is for businesses that also want to take card payments.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">Is the website free with a machine?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Yes — with any machine package, your website and online setup are included free. The cloud software fee and monthly subscription still apply, as with all our services (see the fine print under pricing).</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">How do processing rates work?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Rates depend on your business type and volume. Send a recent statement and we'll review it free and show you your rate before you commit.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">Do I own my website and accounts?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Yes. Your domain, website, and your Google, Apple and Facebook accounts are all in your name. We're added as managers.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">What will I pay?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Every service has three parts: a one-time fee (setup or buy-out), a cloud software fee, and a monthly subscription. Your written quote shows all three before you sign. Your prices are locked in &#8212; the only exception is Buy-Out Program pricing, which can change only if the AI software it runs on goes up in price.</p></details>
+<details style="border-bottom: 1px solid #E2E2DC; padding: 20px 0"><summary style="font-size: 18px; font-weight: 600; min-height: 28px">Can I cancel the monthly plan?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #55565E">Anytime, on website-only plans. If you cancel, we'll help move your site to hosting you control.</p></details>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 92px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: clamp(2rem, 3.6vw, 2.9rem); letter-spacing: -0.03em; line-height: 1.08">Get a free quote</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #55565E">Tell us about your business and which path fits. We'll quote you and get you live.</p>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<a href="tel:+15162885999" style="color: #111114; font-weight: 600">(516) 288-5999</a>
+<a href="mailto:support@customcraftedsites.org" style="color: #111114; font-weight: 600">support@customcraftedsites.org</a>
+<a href="mailto:support@customcraftedsites.org" style="color: #111114; font-weight: 600">support@customcraftedsites.org</a>
+<span style="color: #55565E; font-weight: 500">Open daily, 9 AM &#8211; 9 PM</span>
+</div>
+<a href="/book" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; background: #111114; color: #F6F6F3; text-decoration: none; font-weight: 600; padding: 13px 20px; border-radius: 12px; min-height: 44px; box-sizing: border-box">Rather talk? Book a free 15-min call &#8594;</a>
+</div>
+<form action='/thanks' method='POST' name='quote' data-netlify='true' netlify-honeypot='company-website' style='flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E2DC; border-radius: 22px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px'>
+<input type="hidden" name="form-name" value="quote">
+<input type="hidden" name="subject" id="qSubj" value="New quote request — customcraftedsites.org">
+<p style="display:none"><label>Leave blank <input name="company-website"></label></p>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Your name<input type="text" name="name" required autocomplete="name" style="font: inherit; font-weight: 400; padding: 12px 14px; border: 1px solid #C9C9C2; border-radius: 10px; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600"><span>Business name <span style="font-weight:400;color:#55565E">(optional)</span></span><input type="text" name="business" autocomplete="organization" placeholder="e.g. Joe's Pizza" style="font: inherit; font-weight: 400; padding: 12px 14px; border: 1px solid #C9C9C2; border-radius: 10px; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Phone<input type="tel" name="phone" id="qPhone" required autocomplete="tel" placeholder="(516) 555-0123" style="font: inherit; font-weight: 400; padding: 12px 14px; border: 1px solid #C9C9C2; border-radius: 10px; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600"><span>Email <span style="font-weight:400;color:#55565E">(optional)</span></span><input type="email" name="email" autocomplete="email" placeholder="you@business.com" style="font: inherit; font-weight: 400; padding: 12px 14px; border: 1px solid #C9C9C2; border-radius: 10px; min-height: 44px; box-sizing: border-box"></label>
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">What are you interested in?
+<select name="package" style="font: inherit; font-weight: 400; padding: 12px 14px; border: 1px solid #C9C9C2; border-radius: 10px; min-height: 44px; background: #FFFFFF">
+<option>Bundle — Complete ($399)</option>
+<option>Bundle — Starter ($199)</option>
+<option>Bundle — Everything ($699)</option>
+<option>Website — Get Customers ($1,299)</option>
+<option>Website — Get Found ($499)</option>
+<option>Website — Dominate Local ($2,499)</option>
+<option>Buy-Out ($22,500)</option>
+<option>One-off — Business phone dialer (custom quote)</option>
+<option>One-off — Custom-built software (custom quote)</option>
+<option>New customer — claim $100 off</option>
+<option>Just a free quote</option>
+<option>Not sure yet</option>
+</select></label>
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600"><span>Anything we should know? <span style="font-weight:400;color:#55565E">(optional)</span></span><textarea name="notes" rows="4" placeholder="Current website, how you take payments today, best time to reach you…" style="font: inherit; font-weight: 400; padding: 12px 14px; border: 1px solid #C9C9C2; border-radius: 10px; resize: vertical"></textarea></label>
+<button type="submit" id="qBtn" style="grid-column: 1 / -1; background: #2E4BFF; color: #FFFFFF; border: none; font: inherit; font-weight: 600; font-size: 16px; padding: 15px 24px; border-radius: 12px; min-height: 48px; cursor: pointer">Get my free quote</button>
+<p style="grid-column: 1 / -1; margin: -6px 0 0; font-size: 13px; color: #55565E; text-align: center">Free &amp; no obligation · We usually reply within a few hours, 9 AM–9 PM daily.</p>
+</form>
+<script>
+(function(){
+  var f=document.forms.quote; if(!f) return;
+  var p=document.getElementById('qPhone'), b=document.getElementById('qBtn');
+  p.addEventListener('input',function(){p.setCustomValidity('');});
+  p.addEventListener('blur',function(){var d=p.value.replace(/\D/g,'');if(d.length===11&&d[0]==='1')d=d.slice(1);if(d.length===10)p.value='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6);});
+  f.addEventListener('submit',function(ev){
+    if(p.value.replace(/\D/g,'').length<10){ev.preventDefault();p.setCustomValidity('Please enter a 10-digit phone number.');p.reportValidity();return;}
+    document.getElementById('qSubj').value='New quote request: '+f.elements['package'].value+' · '+f.elements['name'].value.trim();
+    setTimeout(function(){b.disabled=true;b.textContent='Sending…';b.style.opacity='.7';},0);
+  });
+  window.addEventListener('pageshow',function(){b.disabled=false;b.textContent='Get my free quote';b.style.opacity='';});
+})();
+</script>
+</section>
+
+<footer style="background: #111114; color: #A9AAB2">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 14px">
+<span style="display: inline-flex; align-items: center; gap: 14px"><svg width="76" height="76" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Custom Crafted Sites official stamp"><g transform="rotate(-8 100 100)"><defs><path id="ftrr" d="M100,100 m-73,0 a73,73 0 1,1 146,0 a73,73 0 1,1 -146,0"></path></defs><circle cx="100" cy="100" r="96" fill="none" stroke="#D4F57A" stroke-width="4"></circle><circle cx="100" cy="100" r="89" fill="none" stroke="#D4F57A" stroke-width="1.5"></circle><circle cx="100" cy="100" r="58" fill="none" stroke="#D4F57A" stroke-width="1.5"></circle><text font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-weight="700" font-size="15.2" letter-spacing="2.1" fill="#D4F57A"><textPath href="#ftrr" startOffset="0">CUSTOM CRAFTED SITES ★ LONG ISLAND, NY ★ </textPath></text><rect x="78" y="62" width="44" height="44" rx="11" fill="#D4F57A"></rect><path d="M90 94 110 74 M95 74h15v15" fill="none" stroke="#111114" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><text x="100" y="124" text-anchor="middle" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-weight="700" font-size="11" letter-spacing="2" fill="#D4F57A">EST. 2026</text><text x="100" y="138" text-anchor="middle" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-weight="500" font-size="8" letter-spacing="1.4" fill="#D4F57A">WEB + PAYMENTS</text></g></svg><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #F6F6F3; font-size: 18px">Custom Crafted Sites</span></span>
+<span>Card machines, websites, business dialers &amp; custom software for local businesses.</span>
+<a href="https://www.facebook.com/profile.php?id=61596758187357" target="_blank" rel="noopener" aria-label="Custom Crafted Sites on Facebook" style="display: inline-flex; align-items: center; gap: 8px; color: #F6F6F3; text-decoration: none; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F6F6F3" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"></path></svg>Facebook</a>
+<span>© 2026 Custom Crafted Sites · Open daily 9 AM&#8211;9 PM · One-time fee + cloud fee + subscription on all services · Prices locked in · Buy-Out pricing changes only if AI software costs rise · New customers: $100 off total purchase · Sales tax on hardware only</span>
+</div>
+</footer>
+
+<!-- STICKY MOBILE ACTION BAR -->
+<div id="mbar" aria-label="Quick actions">
+<a class="call" href="tel:+15162885999"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111114" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-.8-1l-3.2-.6a1 1 0 0 0-1 .4l-.9 1.2a11 11 0 0 1-4.7-4.7l1.2-.9a1 1 0 0 0 .4-1l-.6-3.2a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"></path></svg>Call</a>
+<a class="quote cta-shine" href="#contact">Get a free quote</a>
+</div>
+
+</div>
+<script>
+(function(){
+  var b=document.getElementById('tBundle'),w=document.getElementById('tWeb');
+  var gb=document.getElementById('grp-bundle'),gw=document.getElementById('grp-web');
+  function show(which){
+    var bundle=which==='bundle';
+    gb.hidden=!bundle; gw.hidden=bundle;
+    gb.style.display=bundle?'grid':'none'; gw.style.display=bundle?'none':'grid';
+    b.classList.toggle('on',bundle); w.classList.toggle('on',!bundle);
+    b.setAttribute('aria-pressed',bundle); w.setAttribute('aria-pressed',!bundle);
+  }
+  b.onclick=function(){show('bundle');}; w.onclick=function(){show('web');};
+
+  // Scroll reveal on sections
+  try{
+    var secs=document.querySelectorAll('section');
+    secs.forEach(function(s){s.classList.add('reveal');});
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+      },{threshold:0, rootMargin:'0px 0px -60px 0px'});
+      secs.forEach(function(s){io.observe(s);});
+      // safety: reveal anything still hidden after load
+      window.addEventListener('load',function(){setTimeout(function(){secs.forEach(function(s){ if(!s.classList.contains('in')&&s.getBoundingClientRect().top<window.innerHeight){s.classList.add('in');} });},300);});
+    } else { secs.forEach(function(s){s.classList.add('in');}); }
+  }catch(e){ document.querySelectorAll('.reveal').forEach(function(s){s.classList.add('in');}); }
+
+  // Lift effect on pricing + feature cards
+  try{
+    document.querySelectorAll('#pricing .pgrp > div, #included > div > div').forEach(function(c){c.classList.add('lift');});
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

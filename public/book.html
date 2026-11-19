@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a free call — Custom Crafted Sites</title>
+<meta name="description" content="Book a free 15-minute call with Custom Crafted Sites. Pick a day and time — phone, video or an in-person visit on Long Island. Open daily 9 AM–9 PM.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#111114">
+<link rel="canonical" href="https://customcraftedsites.org/book">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Custom Crafted Sites">
+<meta property="og:title" content="Book a free call — Custom Crafted Sites">
+<meta property="og:description" content="Pick a time that works for you. Card machines + websites for Long Island businesses.">
+<meta property="og:url" content="https://customcraftedsites.org/book">
+<meta property="og:image" content="https://customcraftedsites.org/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root{--ink:#111114;--paper:#F6F6F3;--line:#E2E2DC;--muted:#55565E;--blue:#2E4BFF;--lime:#D4F57A;--ease:cubic-bezier(.22,.9,.3,1)}
+[hidden]{display:none!important}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.02em}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.logo .mark{width:34px;height:34px;border-radius:9px;background:var(--ink);display:flex;align-items:center;justify-content:center}
+.logo b{font-family:'Space Grotesk',sans-serif;font-size:20px;letter-spacing:-.02em}
+.hnav{display:flex;align-items:center;gap:18px;font-size:15px;font-weight:500}
+.hnav a{color:var(--ink);text-decoration:none}
+.hnav .pill{background:var(--ink);color:var(--paper);padding:11px 18px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.hero{padding:56px 0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--lime);font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px}
+.hero h1{font-size:clamp(36px,6vw,60px);margin:18px 0 12px;line-height:1.02}
+.hero p{margin:0;font-size:18px;line-height:1.55;color:var(--muted);max-width:620px}
+.perks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:18px;font-size:15px;font-weight:500}
+.perks span{display:inline-flex;align-items:center;gap:8px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start;padding-bottom:80px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.step{display:flex;align-items:center;gap:12px;margin:0 0 16px}
+.step i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--lime);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
+.step h2{margin:0;font-size:22px}
+.block+.block{margin-top:30px;padding-top:28px;border-top:1px solid var(--line)}
+.types{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.type{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;padding:16px;border-radius:14px;border:2px solid var(--line);background:#fff;color:var(--ink);transition:border-color .2s,background .2s}
+.type small{color:var(--muted);font-size:13px;line-height:1.4}
+.type b{font-size:16px}
+.type[aria-checked="true"]{border-color:var(--blue);background:#EEF1FF}
+.monthbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.monthbar b{font-size:16px}
+.arrows{display:flex;gap:8px}
+.arrow{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.arrow:disabled{opacity:.35;cursor:default}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.day{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 4px;border-radius:12px;border:2px solid var(--line);background:#fff;color:var(--ink);min-height:72px;justify-content:center}
+.day span{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.day strong{font-family:'Space Grotesk',sans-serif;font-size:22px}
+.day em{font-style:normal;font-size:11px;color:var(--muted)}
+.day[aria-checked="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.day[aria-checked="true"] span,.day[aria-checked="true"] em{color:var(--lime)}
+.day:disabled{opacity:.35;cursor:default}
+.slots-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 12px;flex-wrap:wrap}
+.slots-head b{font-size:16px}
+.slots-head small{color:var(--muted);font-size:13px}
+.part{margin:14px 0 8px;font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}
+.slot{padding:12px 6px;border-radius:10px;border:1.5px solid #C9C9C2;background:#fff;color:var(--ink);font-weight:600;font-size:15px;min-height:46px}
+.slot:hover:not(:disabled):not([aria-checked="true"]){border-color:var(--blue);color:var(--blue)}
+.slot[aria-checked="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.slot:disabled{opacity:.35;text-decoration:line-through;cursor:default}
+.empty{padding:22px;border-radius:12px;background:var(--paper);color:var(--muted);font-size:15px;text-align:center}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+label.f{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+label.f.full{grid-column:1/-1}
+label.f input,label.f select,label.f textarea{font:inherit;font-weight:400;padding:12px 14px;border:1px solid #C9C9C2;border-radius:10px;min-height:46px;background:#fff;color:var(--ink);width:100%}
+label.f textarea{resize:vertical;min-height:96px}
+label.f .opt{font-weight:400;color:var(--muted)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted);line-height:1.45;margin-top:16px}
+.consent input{width:20px;height:20px;margin:1px 0 0;flex:none;accent-color:var(--blue)}
+.submit{margin-top:22px;width:100%;background:var(--blue);color:#fff;border:none;font-weight:600;font-size:17px;padding:16px 24px;border-radius:12px;min-height:54px;transition:transform .14s var(--ease),opacity .2s}
+.submit:active{transform:scale(.98)}
+.submit:disabled{opacity:.55;cursor:not-allowed}
+.err{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;background:#FFF1F0;color:#B42318;font-size:14px;font-weight:500}
+.err.show{display:block}
+label.f [aria-invalid="true"]{border-color:#B42318;background:#FFF8F7}
+.pastnote{margin:0 0 4px;font-size:13px;color:var(--muted)}
+aside{position:sticky;top:96px;display:flex;flex-direction:column;gap:16px}
+.sum{background:var(--ink);color:var(--paper);border-radius:22px;padding:24px}
+.sum h3{margin:0 0 16px;font-size:20px}
+.sum dl{margin:0;display:grid;gap:12px}
+.sum dt{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#A9AAB2;font-weight:600}
+.sum dd{margin:2px 0 0;font-size:16px;font-weight:600}
+.sum dd.no{color:#6E6F78;font-weight:500}
+.sum .tz{margin-top:16px;padding-top:14px;border-top:1px solid #2A2A30;font-size:13px;color:#A9AAB2;line-height:1.5}
+.help{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;font-size:15px;line-height:1.55;color:var(--muted)}
+.help b{color:var(--ink)}
+.help a{color:var(--ink);font-weight:600}
+.done{display:none;text-align:center;padding:48px 28px}
+.done.show{display:block}
+.done .ok{width:64px;height:64px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.done h2{font-size:34px;margin:0 0 10px}
+.done p{color:var(--muted);font-size:17px;line-height:1.55;margin:0 auto;max-width:520px}
+.when{display:inline-block;margin:20px 0;padding:14px 18px;border-radius:14px;background:var(--paper);font-weight:600;font-size:17px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 18px;border-radius:12px;font-weight:600;font-size:15px;text-decoration:none;min-height:48px}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn.line{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+footer{background:var(--ink);color:#A9AAB2;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:32px;padding-bottom:32px}
+footer b{color:var(--paper);font-family:'Space Grotesk',sans-serif;font-size:17px}
+footer a{color:var(--paper);text-decoration:none;font-weight:600}
+.show-sm{display:none}
+@media (max-width:640px){.show-sm{display:inline}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#mobilebar{display:none}
+@media (max-width:960px){
+ .grid{grid-template-columns:1fr}
+ aside{position:static;order:-1}
+ .sum{padding:18px 20px}
+ .sum dl{grid-template-columns:1fr 1fr}
+ .help{display:none}
+}
+@media (max-width:640px){
+ .wrap{padding:0 16px}
+ header .wrap{padding-top:12px;padding-bottom:12px}
+ .logo b{font-size:17px}
+ .hnav .hide-sm{display:none}
+ .hero{padding:36px 0 20px}
+ .card{padding:20px;border-radius:18px}
+ .types{grid-template-columns:1fr}
+ .type{flex-direction:row;align-items:center;gap:12px}
+ .type small{display:none}
+ .days{gap:5px}
+ .day{padding:10px 2px;min-height:64px}
+ .day strong{font-size:19px}
+ .day em{display:none}
+ .slots{grid-template-columns:repeat(3,1fr)}
+ #mobilebar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;align-items:center;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(246,246,243,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+ #mobilebar span{flex:1;font-size:14px;font-weight:600;line-height:1.3}
+ #mobilebar a{background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:13px 16px;border-radius:12px}
+ body.has-bar{padding-bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+#ccs-faq-extra{display:none!important}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="logo" href="/">
+<span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4F57A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19 19 5"/><path d="M9 5h10v10"/></svg></span>
+<b>Custom Crafted Sites</b>
+</a>
+<nav class="hnav" aria-label="Main">
+<a class="hide-sm" href="/#pricing">Pricing</a>
+<a class="hide-sm" href="/#faq">FAQ</a>
+<a class="pill" href="tel:+15162885999"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-.8-1l-3.2-.6a1 1 0 0 0-1 .4l-.9 1.2a11 11 0 0 1-4.7-4.7l1.2-.9a1 1 0 0 0 .4-1l-.6-3.2a1 1 0 0 0-1-.8H6a2 2 0 0 0-2 2z"/></svg><span class="hide-sm">(516) 288-5999</span><span class="show-sm">Call</span></a>
+</nav>
+</div>
+</header>
+
+<main class="wrap">
+<section class="hero">
+<span class="eyebrow">● Open daily 9 AM–9 PM</span>
+<h1>Book a free 15-minute call</h1>
+<p>Pick a day and time that works for you. We'll walk through card machines, your website and getting found on Google &amp; Apple Maps — no pressure, no obligation.</p>
+<div class="perks">
+<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Free, 15 minutes</span>
+<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Phone, video or in person</span>
+<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E4BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Confirmed by text or email</span>
+</div>
+</section>
+
+<div class="grid">
+<div class="card" id="bookingCard">
+<form action='/thanks' id='bookForm' method='POST' name='booking' data-netlify='true' netlify-honeypot='company-website' novalidate>
+<input type="hidden" name="form-name" value="booking">
+<input type="hidden" name="subject" id="fSubj" value="New call booking — customcraftedsites.org">
+<p hidden><label>Leave blank <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+<input type="hidden" name="meeting-type" id="fType" value="Phone call">
+<input type="hidden" name="date" id="fDate">
+<input type="hidden" name="time" id="fTime">
+<input type="hidden" name="appointment" id="fAppt">
+<input type="hidden" name="customer-timezone" id="fTz">
+
+<div class="block">
+<div class="step"><i>1</i><h2>How should we meet?</h2></div>
+<div class="types" role="radiogroup" aria-label="Meeting type">
+<button type="button" class="type" role="radio" aria-checked="true" data-type="Phone call"><b>📞 Phone call</b><small>We call you at the number you give us.</small></button>
+<button type="button" class="type" role="radio" aria-checked="false" data-type="Video call (Google Meet)"><b>💻 Video call</b><small>Google Meet link sent with your confirmation.</small></button>
+<button type="button" class="type" role="radio" aria-checked="false" data-type="In-person visit"><b>🏪 In-person visit</b><small>We come to your business on Long Island.</small></button>
+</div>
+<label class="f full" id="addrWrap" hidden style="margin-top:14px">Business address for the visit<input type="text" name="visit-address" id="fAddr" autocomplete="street-address" placeholder="Street, town"></label>
+</div>
+
+<div class="block">
+<div class="step"><i>2</i><h2>Pick a day</h2></div>
+<div class="monthbar"><b id="monthLabel"></b><div class="arrows"><button type="button" class="arrow" id="prevWk" aria-label="Previous week"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button type="button" class="arrow" id="nextWk" aria-label="Next week"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div></div>
+<div class="days" id="days" role="radiogroup" aria-label="Day"></div>
+</div>
+
+<div class="block">
+<div class="step"><i>3</i><h2>Pick a time</h2></div>
+<div class="slots-head"><b id="slotsLabel">Choose a day first</b><small>Times shown in Eastern Time (New York)</small></div>
+<div id="slots"></div>
+</div>
+
+<div class="block">
+<div class="step"><i>4</i><h2>Your details</h2></div>
+<div class="fields">
+<label class="f">Your name<input type="text" name="name" id="fName" required autocomplete="name"></label>
+<label class="f"><span>Business name <span class="opt">(optional)</span></span><input type="text" name="business" autocomplete="organization"></label>
+<label class="f">Mobile phone<input type="tel" name="phone" id="fPhone" required autocomplete="tel" placeholder="(516) 555-0123"></label>
+<label class="f">Email<input type="email" name="email" id="fEmail" required autocomplete="email" placeholder="you@business.com"></label>
+<label class="f full">What are you interested in?<select name="interest">
+<option>Card machine + free website bundle</option>
+<option>Website-only plan</option>
+<option>Google &amp; Apple Maps / social setup</option>
+<option>Buy-Out Program</option>
+<option>Business phone dialer (custom quote)</option>
+<option>Custom-built software (custom quote)</option>
+<option>Not sure yet — help me choose</option>
+</select></label>
+<label class="f"><span>Type of business <span class="opt">(optional)</span></span><input type="text" name="industry" placeholder="e.g. pizzeria, salon, auto shop"></label>
+<label class="f full"><span>Anything we should know? <span class="opt">(optional)</span></span><textarea name="notes" rows="3" placeholder="Current website, how you take payments today, questions…"></textarea></label>
+</div>
+<label class="consent"><input type="checkbox" name="text-ok" value="yes" checked>Text me my confirmation and a reminder before the call. Message &amp; data rates may apply; reply STOP anytime.</label>
+<button type="submit" class="submit" id="submitBtn">Book my free call</button>
+<div class="err" id="err" role="alert"></div>
+</div>
+</form>
+
+<div class="done" id="done" tabindex="-1">
+<div class="ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#111114" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></div>
+<h2>You're booked in.</h2>
+<p>We've got your request. You'll get a confirmation by text or email shortly — usually within the hour while we're open (daily 9 AM–9 PM).</p>
+<div class="when" id="doneWhen"></div>
+<div class="actions">
+<a class="btn dark" id="gcal" href="#" target="_blank" rel="noopener">Add to Google Calendar</a>
+<a class="btn line" id="ics" href="#" download="custom-crafted-sites-call.ics">Apple / Outlook (.ics)</a>
+<a class="btn line" href="/">Back to home</a>
+</div>
+<p style="margin-top:22px;font-size:15px">Need to change it? Call or text <a href="tel:+15162885999" style="color:#111114;font-weight:600">(516) 288-5999</a>.</p>
+</div>
+</div>
+
+<aside>
+<div class="sum" aria-live="polite">
+<h3>Your call</h3>
+<dl>
+<div><dt>Type</dt><dd id="sType">Phone call</dd></div>
+<div><dt>Length</dt><dd>15 minutes · Free</dd></div>
+<div><dt>Day</dt><dd id="sDay" class="no">Not picked yet</dd></div>
+<div><dt>Time</dt><dd id="sTime" class="no">Not picked yet</dd></div>
+</dl>
+<div class="tz" id="sTz">All times are Eastern Time (New York).</div>
+</div>
+<div class="help">
+<b>Rather talk now?</b><br>Call or text <a href="tel:+15162885999">(516) 288-5999</a> — we pick up 9 AM–9 PM, every day.<br><br>
+<b>Prefer email?</b><br><a href="mailto:support@customcraftedsites.org">support@customcraftedsites.org</a>
+</div>
+</aside>
+</div>
+</main>
+
+<div id="mobilebar" hidden><span id="mbText"></span><a href="#fName">Continue</a></div>
+
+<footer>
+<div class="wrap">
+<b>Custom Crafted Sites</b>
+<span>Card machines &amp; websites for local businesses · Open daily 9 AM–9 PM</span>
+<span><a href="tel:+15162885999">(516) 288-5999</a> · <a href="https://www.facebook.com/profile.php?id=61596758187357" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/ccswebsitesli/" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:support@customcraftedsites.org">Email us</a></span>
+</div>
+</footer>
+
+<script>
+(function(){
+  var TZ='America/New_York', OPEN=9, CLOSE=21, STEP=30, LEN=15, DAYS_AHEAD=28, LEAD_MIN=60;
+  var $=function(id){return document.getElementById(id)};
+  var state={type:'Phone call',date:null,time:null,week:0};
+
+  // Current wall-clock time in New York
+  function nyParts(d){
+    var f=new Intl.DateTimeFormat('en-US',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+    var o={};f.formatToParts(d).forEach(function(p){o[p.type]=p.value});
+    return {y:+o.year,m:+o.month,d:+o.day,h:+o.hour,mi:+o.minute};
+  }
+  // UTC instant for a New York wall-clock time (DST-safe)
+  function nyToDate(y,m,d,h,mi){
+    var guess=Date.UTC(y,m-1,d,h,mi);
+    for(var i=0;i<2;i++){var p=nyParts(new Date(guess));var diff=Date.UTC(p.y,p.m-1,p.d,p.h,p.mi)-Date.UTC(y,m-1,d,h,mi);guess-=diff;}
+    return new Date(guess);
+  }
+  function key(y,m,d){return y+'-'+String(m).padStart(2,'0')+'-'+String(d).padStart(2,'0')}
+  function fmtTime(h,mi){var ap=h<12?'AM':'PM';var hh=h%12||12;return hh+':'+String(mi).padStart(2,'0')+' '+ap}
+  var now=nyParts(new Date());
+  var base=new Date(Date.UTC(now.y,now.m-1,now.d));
+  var list=[];
+  for(var i=0;i<DAYS_AHEAD;i++){var x=new Date(base.getTime()+i*864e5);list.push({y:x.getUTCFullYear(),m:x.getUTCMonth()+1,d:x.getUTCDate(),wd:x.getUTCDay()});}
+  var WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], MO=['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  function slotsFor(day){
+    var out=[], cutoff=Date.now()+LEAD_MIN*60000;
+    for(var t=OPEN*60;t+LEN<=CLOSE*60;t+=STEP){
+      var h=Math.floor(t/60), mi=t%60, at=nyToDate(day.y,day.m,day.d,h,mi);
+      out.push({h:h,mi:mi,at:at,ok:at.getTime()>cutoff});
+    }
+    return out;
+  }
+  function openCount(day){return slotsFor(day).filter(function(s){return s.ok}).length}
+
+  function renderDays(){
+    var wrap=$('days'); wrap.innerHTML='';
+    var start=state.week*7, wk=list.slice(start,start+7);
+    var first=wk[0], last=wk[wk.length-1];
+    $('monthLabel').textContent=first.m===last.m?MO[first.m-1]+' '+first.y:MO[first.m-1].slice(0,3)+' – '+MO[last.m-1].slice(0,3)+' '+last.y;
+    wk.forEach(function(day,i){
+      var k=key(day.y,day.m,day.d), n=openCount(day);
+      var b=document.createElement('button');
+      b.type='button';b.className='day';b.setAttribute('role','radio');
+      b.setAttribute('aria-checked',state.date===k?'true':'false');
+      b.setAttribute('aria-label',WD[day.wd]+' '+MO[day.m-1]+' '+day.d+(n?'':' — no times left'));
+      b.innerHTML='<span>'+(start+i===0?'Today':WD[day.wd])+'</span><strong>'+day.d+'</strong><em>'+(n?n+' open':'Full')+'</em>';
+      b.disabled=!n;
+      b.onclick=function(){state.date=k;state.time=null;state.day=day;renderDays();renderSlots();sync();};
+      wrap.appendChild(b);
+    });
+    $('prevWk').disabled=state.week===0;
+    $('nextWk').disabled=(state.week+1)*7>=list.length;
+  }
+  function renderSlots(){
+    var box=$('slots'); box.innerHTML='';
+    if(!state.day){box.innerHTML='<div class="empty">Pick a day above to see open times.</div>';$('slotsLabel').textContent='Choose a day first';return;}
+    var d=state.day;
+    $('slotsLabel').textContent=WD[d.wd]+', '+MO[d.m-1]+' '+d.d;
+    var all=slotsFor(d), s=all.filter(function(x){return x.ok}), groups=[['Morning',0,12],['Afternoon',12,17],['Evening',17,24]];
+    if(s.length<all.length){var pn=document.createElement('p');pn.className='pastnote';pn.textContent='Earlier times today have passed — showing what’s still open.';box.appendChild(pn);}
+    groups.forEach(function(g){
+      var items=s.filter(function(x){return x.h>=g[1]&&x.h<g[2]});
+      if(!items.length)return;
+      var p=document.createElement('div');p.className='part';p.textContent=g[0];box.appendChild(p);
+      var grid=document.createElement('div');grid.className='slots';grid.setAttribute('role','radiogroup');grid.setAttribute('aria-label',g[0]+' times');
+      items.forEach(function(x){
+        var label=fmtTime(x.h,x.mi), b=document.createElement('button');
+        b.type='button';b.className='slot';b.textContent=label;b.disabled=!x.ok;
+        b.setAttribute('role','radio');b.setAttribute('aria-checked',state.time===label?'true':'false');
+        b.onclick=function(){state.time=label;state.at=x.at;renderSlots();sync();};
+        grid.appendChild(b);
+      });
+      box.appendChild(grid);
+    });
+  }
+  function longDay(d){return WD[d.wd]+', '+MO[d.m-1]+' '+d.d+', '+d.y}
+  function sync(){
+    $('fType').value=state.type;
+    $('sType').textContent=state.type;
+    $('addrWrap').hidden=state.type!=='In-person visit';
+    $('fAddr').required=state.type==='In-person visit';
+    var sd=$('sDay'), st=$('sTime');
+    sd.textContent=state.day?longDay(state.day):'Not picked yet'; sd.className=state.day?'':'no';
+    st.textContent=state.time?state.time+' ET':'Not picked yet'; st.className=state.time?'':'no';
+    $('fDate').value=state.day?longDay(state.day):'';
+    $('fTime').value=state.time?state.time+' Eastern':'';
+    $('fAppt').value=state.at?state.at.toISOString():'';
+    var localTz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';
+    $('fTz').value=localTz;
+    $('sTz').textContent='All times are Eastern Time (New York).';
+    if(state.at&&localTz&&localTz!==TZ){
+      $('sTz').textContent='That\u2019s '+state.at.toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZoneName:'short'})+' where you are.';
+    }
+    var bar=$('mobilebar');
+    if(state.time&&window.innerWidth<=640){bar.hidden=false;document.body.classList.add('has-bar');$('mbText').textContent=WD[state.day.wd]+' '+MO[state.day.m-1].slice(0,3)+' '+state.day.d+' · '+state.time;}
+    else{bar.hidden=true;document.body.classList.remove('has-bar');}
+  }
+
+  document.querySelectorAll('.type').forEach(function(b){
+    b.onclick=function(){
+      state.type=b.getAttribute('data-type');
+      document.querySelectorAll('.type').forEach(function(o){o.setAttribute('aria-checked',o===b?'true':'false')});
+      sync();
+    };
+  });
+  $('prevWk').onclick=function(){if(state.week>0){state.week--;renderDays();}};
+  $('nextWk').onclick=function(){if((state.week+1)*7<list.length){state.week++;renderDays();}};
+
+  // Auto-pick the first day with open times
+  for(var j=0;j<list.length;j++){if(openCount(list[j])){state.day=list[j];state.date=key(list[j].y,list[j].m,list[j].d);state.week=Math.floor(j/7);break;}}
+  renderDays();renderSlots();sync();
+
+  function showErr(msg,el){var e=$('err');e.textContent=msg;e.classList.add('show');if(el){el.setAttribute('aria-invalid','true');el.focus();}}
+  ['fName','fPhone','fEmail','fAddr'].forEach(function(id){$(id).addEventListener('input',function(){this.removeAttribute('aria-invalid');$('err').classList.remove('show');});});
+  $('fPhone').addEventListener('blur',function(){var d=this.value.replace(/\D/g,'');if(d.length===11&&d[0]==='1')d=d.slice(1);if(d.length===10)this.value='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6);});
+  $('fEmail').addEventListener('blur',function(){this.value=this.value.trim();});
+  function icsStamp(d){return d.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')}
+
+  $('bookForm').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    $('err').classList.remove('show');
+    if(!state.day||!state.time){showErr('Please pick a day and a time for your call.');$('slots').scrollIntoView({behavior:'smooth',block:'center'});return;}
+    if(state.at.getTime()<Date.now()+LEAD_MIN*60000){state.time=null;renderSlots();sync();showErr('That time just passed — please pick another one.');return;}
+    var name=$('fName'),phone=$('fPhone'),email=$('fEmail'),addr=$('fAddr');
+    if(!name.value.trim())return showErr('Please add your name.',name);
+    if(phone.value.replace(/\D/g,'').length<10)return showErr('Please add a phone number we can reach you on (10 digits).',phone);
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()))return showErr('Please add a valid email for your confirmation.',email);
+    if(state.type==='In-person visit'&&!addr.value.trim())return showErr('Please add the address we should visit.',addr);
+    sync();
+    $('fSubj').value='New call booking: '+state.type+' · '+WD[state.day.wd]+' '+MO[state.day.m-1].slice(0,3)+' '+state.day.d+', '+state.time+' ET · '+name.value.trim();
+    var btn=$('submitBtn');btn.disabled=true;btn.textContent='Booking…';
+    var body=new URLSearchParams(new FormData(this)).toString();
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body})
+    .then(function(r){if(!r.ok)throw new Error(r.status);done();})
+    .catch(function(){btn.disabled=false;btn.textContent='Book my free call';showErr('Something went wrong sending your booking. Please try again, or call/text (516) 288-5999.');});
+  });
+
+  function done(){
+    var start=state.at,end=new Date(start.getTime()+LEN*60000);
+    var title='Free call with Custom Crafted Sites',
+        details=state.type+' with Custom Crafted Sites. Questions or changes: call/text (516) 288-5999 · customcraftedsites.org',
+        loc=state.type==='In-person visit'?$('fAddr').value:(state.type==='Phone call'?'We\u2019ll call you':'Google Meet link sent with your confirmation');
+    $('doneWhen').textContent=state.type+' · '+longDay(state.day)+' at '+state.time+' ET';
+    $('gcal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(title)+'&dates='+icsStamp(start)+'/'+icsStamp(end)+'&details='+encodeURIComponent(details)+'&location='+encodeURIComponent(loc);
+    var ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Custom Crafted Sites//Booking//EN','BEGIN:VEVENT','UID:'+Date.now()+'@customcraftedsites.org','DTSTAMP:'+icsStamp(new Date()),'DTSTART:'+icsStamp(start),'DTEND:'+icsStamp(end),'SUMMARY:'+title,'DESCRIPTION:'+details.replace(/,/g,'\\,'),'LOCATION:'+loc.replace(/,/g,'\\,'),'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:'+title,'END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+    $('ics').href='data:text/calendar;charset=utf-8,'+encodeURIComponent(ics);
+    $('bookForm').style.display='none';
+    $('mobilebar').hidden=true;document.body.classList.remove('has-bar');
+    var d=$('done');d.classList.add('show');d.focus();
+    window.scrollTo({top:$('bookingCard').offsetTop-90,behavior:'smooth'});
+  }
+  window.addEventListener('resize',sync);
+})();
+</script>
+</body>
+</html>
